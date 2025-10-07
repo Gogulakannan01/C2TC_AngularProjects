@@ -1,0 +1,34 @@
+<div class="card-container">
+    <h1>AngularJS Directives</h1>
+
+    <div *ngIf="isVisible; else elseBlock">
+        <p>This content is visible because 'isVisible' is true.</p>
+    </div>
+    <ng-template #elseBlock>
+        <p>This content is visible because 'isVisible' is false.</p>
+    </ng-template>
+
+    <h3>List of Fruits:</h3>
+    <ul>
+        <li *ngFor="let fruit of fruits">{{ fruit }}</li>
+    </ul>
+
+    <h3>Selected Color:</h3>
+    <div [ngSwitch]="selectedColor">
+        <p *ngSwitchCase="'red'">You selected Red!</p>
+        <p *ngSwitchCase="'green'">You selected Green!</p>
+        <p *ngSwitchCase="'blue'">You selected Blue!</p>
+        <p *ngSwitchDefault>Select a color!</p>
+    </div>
+
+    <div appHighlight>
+        This text is highlighted by a custom attribute directive.
+    </div>
+
+    <p [ngClass]="{'text-success': isSuccess, 'text-danger': !isSuccess}">
+        This text's color changes based on the 'isSuccess' value.
+    </p>
+
+    <button (click)="toggleVisibility()">Toggle Visibility</button>
+    <button (click)="toggleSuccess()">Toggle Success</button>
+</div>

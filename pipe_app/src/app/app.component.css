@@ -1,0 +1,89 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f3f4f6, #dbeafe);
+  color: #222;
+  margin: 0;
+  padding: 40px;
+}
+
+/* ====== Main Container ====== */
+.container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;
+  max-width: 700px;
+  margin: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ====== Headings ====== */
+h1 {
+  font-size: 28px;
+  text-align: center;
+  color: #1e3a2a;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #60a5fa;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+h2 {
+  color: #1e40af;
+  margin-top: 40px;
+  border-left: 4px solid #2563eb;
+  padding-left: 10px;
+}
+
+/* ====== Text and Formatting ====== */
+p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 10px 0;
+}
+
+strong {
+  color: #0f172a;
+}
+
+/* ====== Employee List ====== */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background: #eff6ff;
+  border-left: 5px solid #3b82f6;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+}
+
+ul li:hover {
+  background: #dbeafe;
+  transform: scale(1.02);
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
